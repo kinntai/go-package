@@ -9,8 +9,7 @@ import (
 
 func QuestionYesNo(question string) bool {
 	choices := []string{"Yes", "No"}
-	selected := QuestionChoices(question, choices)
-	if selected == choices[0] {
+	if QuestionChoices(question, choices) == choices[0] {
 		return true
 	}
 	return false
